@@ -1,11 +1,21 @@
-nota_aluno = 7
+peso=input('digite seu peso')
+altura=input('digite sua altura')
 
-nota_para_aprovação = 6
+imc=peso/altura
 
-print(nota_aluno>=nota_para_aprovação)
-
-if nota_aluno>=nota_para_aprovação:
-  print('aprovado')
-
+if imc<18.5:
+  classificação="abaixo do peso"
+elif 18.5<= imc < 25:
+    classificação="peso normal"
+elif 25 <= imc < 30:
+    classificação="sobrepeso"
 else:
-     print('reprovado')
+    classificação="obesidade"
+     
+     
+     
+     
+     
+     
+     
+     

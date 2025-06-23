@@ -1,21 +1,13 @@
-numero=int(input("Digite um numero de 1 a 7:"))
+valor_compra=float(input("digite o valor da compra"))
 
-if numero==1:
-   print('domingo')
-elif numero==2:
-    print('segunda')     
-if numero==3:
-  print('terça')
-elif numero==4:
-    print('quarta')
-if numero==5:
-  print('quinta')
-elif numero==6:
-    print('sexta')
-if numero==7:
-  print('sabado')
-
-
+if valor_compra >= 1000:
+  print('desconto = 15',valor_compra*0.15)
+elif valor_compra >= 500:
+    print('desconto = 10',valor_compra*0.10)
+elif valor_compra >= 100:
+    print('desconto = 5',valor_compra*0.05)
+else:
+     print('desconto = 0',valor_compra*0.0)
 
 
 
